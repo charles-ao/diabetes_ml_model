@@ -3,6 +3,6 @@ joblib
 xgboost
 pandas
 matplotlib
-sklearn
+scikit-learn
 imbalanced-learn
 ucimlrepo
