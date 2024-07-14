@@ -1,0 +1,8 @@
+flask
+joblib
+xgboost
+pandas
+matplotlib
+sklearn
+imbalanced-learn
+ucimlrepo
