@@ -6,6 +6,6 @@ matplotlib
 scikit-learn
 imbalanced-learn
 ucimlrepo
-fastapi, 
-uvicorn, 
+fastapi
+uvicorn
 joblib
