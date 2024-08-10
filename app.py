@@ -1,21 +1,3 @@
-# # app.py
-# from flask import Flask, request, jsonify
-# import joblib
-
-# app = Flask(__name__)
-# model = joblib.load('diabetes_model.pkl')
-
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     data = request.json
-#     prediction = model.predict([data['input']])
-#     return jsonify({'prediction': prediction.tolist()})
-
-# if __name__ == '__main__':
-#     app.run()
-
-
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
@@ -48,10 +30,10 @@ def predict_diabetes(data: dict):
     input_data = np.array(valuesList).reshape(1, -1)
     
     # Scale the input
-    # input_data_scaled = scaler.transform(input_data)
+    input_data_scaled = scaler.transform(input_data)
     
     # Make a prediction
-    prediction = model.predict(input_data)
+    prediction = model.predict(input_data_scaled)
     
     # Return the prediction result
     return {"prediction": int(prediction[0])}
