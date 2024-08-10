@@ -30,30 +30,6 @@ function logSelectedValues() {
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify(data)
-    
-    // const raw = JSON.stringify({
-    //   "HighBP": 1,
-    //   "HighChol": 1,
-    //   "CholCheck": 1,
-    //   "BMI": 18,
-    //   "Smoker": 0,
-    //   "Stroke": 0,
-    //   "HeartDiseaseorAttack": 0,
-    //   "PhysActivity": 0,
-    //   "Fruits": 0,
-    //   "Veggies": 0,
-    //   "HvyAlcoholConsump": 0,
-    //   "AnyHealthcare": 1,
-    //   "NoDocbcCost": 0,
-    //   "GenHlth": 4,
-    //   "MentHlth": 0,
-    //   "PhysHlth": 0,
-    //   "DiffWalk": 1,
-    //   "Sex": 0,
-    //   "Age": 11,
-    //   "Education": 2,
-    //   "Income": 4
-    // });
 
     console.log(raw);
     
